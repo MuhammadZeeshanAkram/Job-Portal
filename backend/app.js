@@ -1,6 +1,7 @@
 import express from "express";
 import {config} from "dotenv"; //here we are importing the secret thing throught the dotenv file which contains every variable secret key 
 import cors from "cors"; //it is just used to connect frontend with backend means core is used here as a middleware
+import cookieParser from "cookie-parser";
 
 const app = express();
 config({path:"./config/config.env"})
